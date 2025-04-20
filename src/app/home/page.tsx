@@ -238,7 +238,6 @@ const page = () => {
                   <div>
                     <p className="font-medium text-gray-800">Ish vaqti</p>
                     <p className="text-gray-600">Dushanba - Shanba: 9:00 - 18:00</p>
-                    <p className="text-gray-600">Yakshanba: Yopiq</p>
                   </div>
                 </div>
               </div>
