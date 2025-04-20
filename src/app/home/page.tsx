@@ -37,14 +37,14 @@ const page = () => {
             {/* Left column - Hero content */}
             <div className="space-y-6">
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
-                Samarqanddagi IT va Robotika <span className="text-blue-600">Ta'lim Markazi</span>
+                Samarqanddagi IT va Robotika <span className="text-blue-600">Ta&apos;lim Markazi</span>
               </h1>
               <p className="text-xl text-gray-600 max-w-md">
-                Zamonaviy texnologiyalar sohasida o'z karyerangizni boshlang. Professional o'qituvchilar va amaliy darslar bilan.
+                Zamonaviy texnologiyalar sohasida o&apos;z karyerangizni boshlang. Professional o&apos;qituvchilar va amaliy darslar bilan.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium">
-                  Kurslarni ko'rish
+                  Kurslarni ko&apos;rish
                 </Button>
                 <Button className="bg-transparent border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-2 rounded-lg font-medium">
                   Bepul darsga yoziling
@@ -122,9 +122,9 @@ const page = () => {
                   </Button>
 
                   <div className="text-center mt-4">
-                    <span className="text-gray-600 text-sm">Hisobingiz yo'qmi? </span>
+                    <span className="text-gray-600 text-sm">Hisobingiz yo&apos;qmi? </span>
                     <Link href="/register" className="text-blue-600 hover:text-blue-500 text-sm font-medium">
-                      Ro'yxatdan o'ting
+                      Ro&apos;yxatdan o&apos;ting
                     </Link>
                   </div>
                 </form>
@@ -191,13 +191,13 @@ const page = () => {
         {/* Contact section */}
         <section id="contact" className="mt-20 mb-10">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-gray-900">Biz bilan bog'laning</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Biz bilan bog&apos;laning</h2>
             <p className="text-gray-600 mt-2 max-w-2xl mx-auto">Savollaringiz bormi? Biz sizga yordam berishga tayyormiz</p>
           </div>
 
           <div className="flex flex-col md:flex-row bg-white rounded-xl overflow-hidden shadow-lg">
             <div className="w-full md:w-1/2 p-8">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Bog'lanish ma'lumotlari</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Bog&apos;lanish ma&apos;lumotlari</h3>
 
               <div className="space-y-4">
                 <div className="flex items-start">
@@ -301,7 +301,7 @@ const page = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <h3 className="text-lg font-semibold mb-4">TechGenius</h3>
-              <p className="text-gray-400">Samarqanddagi zamonaviy IT va robotika ta'lim markazi</p>
+              <p className="text-gray-400">Samarqanddagi zamonaviy IT va robotika ta&apos;lim markazi</p>
             </div>
 
             <div>

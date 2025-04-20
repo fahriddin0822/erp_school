@@ -79,16 +79,22 @@ export async function DELETE(req: NextRequest) {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
 
-    const searchParams = new URLSearchParams(req.url);
-    const body = await req.json();
-
-    if (body.id == null) {
+    const body = await req.json().catch(() => null);
+    if (!body || !body.id) {
       return NextResponse.json({ error: "Invalid request" }, { status: 400 });
     }
 
-    await prisma.notice.delete({
+    const deletedNotice = await prisma.notice.delete({
       where: { id: body.id },
     });
+
+    const pathToDelete = deletedNotice.filePathName?.split(
+      "/storage/v1/object/public/sms/"
+    )[1];
+    if (pathToDelete) {
+      await supabase.storage.from("sms").remove([pathToDelete]);
+    }
+
     revalidatePath("/dashboard/notices");
     return NextResponse.json(
       { msg: "Notice deleted successfully." },
